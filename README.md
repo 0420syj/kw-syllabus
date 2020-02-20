@@ -2,9 +2,7 @@
  
 > https://0420syj.github.io/kw-syllabus/  
 > 광운대학교 학부 강의 계획서를 검색 및 조회할 수 있는 서비스입니다.
-
 > [stupid-kw](https://github.com/soonoo/stupid-kw, "해당 repo로 이동")에서 기능을 추가하여 제작하였습니다. 오픈소스 사용을 허가해주신 원작자분께 감사드립니다. :relieved:
-
 > 강의계획서를 조회하려면 로그인이 필요합니다.
 
 ### :page_facing_up: 강의계획서 데이터 현황
