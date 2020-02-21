@@ -50,4 +50,3 @@ export default connect(
   state => state,
   actions,
 )(App);
-

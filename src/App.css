@@ -38,17 +38,15 @@ div.form-selector > input {
 .list-item {
   display: flex;
   border: 1px solid #ccc;
-  border-radius: 3px;
+  border-radius: 4px;
   height: 40px;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .list-item:hover {
-  background-color: #d3dcf5;
-}
-
-.list-item {
-  cursor: pointer;
+  border: 1px solid firebrick;
+  background-color: lightcoral;
 }
 
 .list-item > a > div {

@@ -11,6 +11,14 @@ const SemesterSelector = ({ value, onChange }) => {
         value={value}
         onChange={onChange}
         isSearchable={false}
+        theme={theme => ({
+          ...theme,
+          colors: {
+            ...theme.colors,
+            primary25: 'lightcoral',
+            primary: 'maroon',
+          },
+        })}
       />
     </div>
   );
