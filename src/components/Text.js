@@ -37,7 +37,7 @@ class Text extends Component {
           onFocus={this.onFocusChange}
           onBlur={this.onBlurChange}
           minLength={1}
-          debounceTimeout={300}
+          debounceTimeout={350}
         />
       </div>
     );

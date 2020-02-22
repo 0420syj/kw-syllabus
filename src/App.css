@@ -7,11 +7,11 @@
   align-items: center;
 }
 
-div.form-selector, div.list-item {
+div.form-selector {
   width: 100%;
   min-width: 300px;
   max-width: 500px;
-  margin-bottom: 15px;
+  margin-top: 15px;
   box-sizing: border-box;
   font-size: 16px;
 }
@@ -35,18 +35,33 @@ div.form-selector > input {
   padding: 5px 0 5px;
 }
 
+.list-length {
+  margin-top: 20px;
+}
+
+.list-length > span {
+  color: firebrick;
+}
+
 .list-item {
+  width: 100%;
+  min-width: 300px;
+  max-width: 500px;
+  margin-top: 10px;
+  box-sizing: border-box;
+  padding: 2px 8px;
+  font-size: 14px;
   display: flex;
   border: 1px solid #ccc;
   border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   height: 40px;
-  margin-bottom: 10px;
   cursor: pointer;
 }
 
 .list-item:hover {
-  border: 1px solid firebrick;
-  background-color: lightcoral;
+  border: 1px solid black;
+  background-color: #ededed;
 }
 
 .list-item > a > div {
@@ -68,6 +83,7 @@ div.form-selector > input {
 
 .list-item > a > div:nth-child(1) {
   width: 27%;
+  font-size: 13px;
 }
 .list-item > a > div:nth-child(2) {
   width: 40%;
@@ -87,7 +103,7 @@ div.form-selector > input {
     display: none;
   }
   .list-item > a > div:nth-child(2) {
-    width: 50%;
+    width: 40%;
   }
   .list-item > a > div:nth-child(3) {
     width: 15%;
@@ -96,7 +112,7 @@ div.form-selector > input {
     width: 15%;
   }
   .list-item > a > div:nth-child(5) {
-    width: 20%;
+    width: 30%;
   }
 }
 

@@ -36,7 +36,7 @@ class App extends Component {
         {isFetching ?
             <div>loading ...</div> :
             (<React.Fragment>
-              <div className='list-length'>{data.length} 건의 강좌 정보</div>
+              <div className='list-length'><span>{data.length}</span>건의 강좌 정보</div>
               {data.map((item) => {
               return <ListItem key={item.id} data={item} />
             })}

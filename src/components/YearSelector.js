@@ -15,7 +15,7 @@ const YearSelector = ({ value, onChange }) => {
           ...theme,
           colors: {
             ...theme.colors,
-            primary25: 'lightcoral',
+            primary25: '#ededed',
             primary: 'maroon',
           },
         })}
