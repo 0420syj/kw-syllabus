@@ -17,6 +17,7 @@ const MajorSelector = ({ value, onChange }) => {
             ...theme.colors,
             primary25: '#ededed',
             primary: 'maroon',
+            primary50: '#ededed'
           },
         })}
       />

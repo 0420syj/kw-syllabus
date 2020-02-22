@@ -13,7 +13,7 @@
 
 ### :computer: 로컬에서 실행하기
 
-##### 1. Node.js 설치
+#### 1. Node.js 설치
 아래 홈페이지에서 Node.js를 설치합니다.  
 https://nodejs.org/en/download/ 
 

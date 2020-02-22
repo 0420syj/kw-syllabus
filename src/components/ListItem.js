@@ -7,7 +7,7 @@ const ListItem = ({ data }) => {
     <div className={className}>
       <a target='_blank' href={data.link}>
       <div>{data.id}</div> 
-      <div>{data.title}</div> 
+      <div>{data.hasSyllabus ? data.title : data.title + '(미입력)'}</div> 
       <div>{data.type}</div> 
       <div>{data.credit}</div> 
       <div>{data.prof}</div> 
