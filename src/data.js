@@ -68,13 +68,13 @@ export const major = [
 ];
 
 const year = [];
-for(let i = 2015; i <= new Date().getFullYear(); i++) {
+for(let i = 2010; i <= new Date().getFullYear(); i++) {
   year.push({ value: i.toString(), label: i.toString() })
 };
 export { year };
 
 const semester = [];
-for(let i = 1; i < 3; i++) {
+for(let i = 1; i <= 2; i++) {
   semester.push({ value: i.toString(), label: i.toString() + '학기' })
 }
 /*
