@@ -36,6 +36,12 @@ div.form-selector > input {
   padding: 5px 0 5px;
 }
 
+.list-container {
+  width: 100%;
+  min-width: 300px;
+  max-width: 500px;
+}
+
 .list-length {
   margin-top: 20px;
 }

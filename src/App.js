@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 import * as actions from './actions';
 import './App.css';
@@ -21,7 +21,7 @@ class App extends Component {
       return item.title.includes(title) && item.prof.includes(prof);
     });
     data = data.filter(item => {
-      if(!college.value && !major.value) return true;
+      if (!college.value && !major.value) return true;
       else return college.value === '' ? item.id.slice(0, 4) === major.value : item.id.slice(0, 4) === college.value;
     });
 
@@ -33,14 +33,16 @@ class App extends Component {
         <MajorSelector value={major} onChange={this.props.setMajor} />
         <Text placeholder='과목명' value={title} onChange={this.props.setTitle} />
         <Text placeholder='담당교수' value={prof} onChange={this.props.setProf} />
-        {isFetching ?
+        <div className='list-container'>
+          {isFetching ?
             <div>loading ...</div> :
-            (<React.Fragment>
+            (<Fragment>
               <div className='list-length'><span>{data.length}</span>건의 강좌 정보</div>
               {data.map((item) => {
-              return <ListItem key={item.id} data={item} />
-            })}
-          </React.Fragment>)}
+                return <ListItem key={item.id} data={item} />
+              })}
+            </Fragment>)}
+        </div>
       </div>
     );
   }
