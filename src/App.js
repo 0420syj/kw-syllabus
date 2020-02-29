@@ -8,9 +8,15 @@ import CollegeSelector from './components/CollegeSelector';
 import MajorSelector from './components/MajorSelector';
 import Text from './components/Text';
 import ListItem from './components/ListItem';
+import WebFont from 'webfontloader';
 
 class App extends Component {
   componentDidMount() {
+    WebFont.load({
+      google: {
+        families: ['Noto Sans KR']
+      }
+    })
     this.props.fetchData(new Date().getFullYear(), 1)
   }
 
