@@ -1,8 +1,9 @@
 import * as data from '../data';
 
+// Set initial state
 const initialState = {
   year: data.year[data.year.length - 1],
-  semester: data.semester[0],
+  semester: data.semester[1],
   college: data.college[0],
   major: data.major[0],
   title: '',

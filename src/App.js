@@ -11,7 +11,8 @@ import ListItem from './components/ListItem';
 
 class App extends Component {
   componentDidMount() {
-    this.props.fetchData(new Date().getFullYear(), 1)
+    // Set year & semester of default fetch data
+    this.props.fetchData(new Date().getFullYear(), 2)
   }
 
   render() {
