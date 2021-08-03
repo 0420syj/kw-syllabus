@@ -22,14 +22,16 @@ class Text extends Component {
             borderRadius: '4px',
             boxShadow: '0 0 0 1px maroon',
             padding: '2px 8px',
-            fontFamily: 'Noto Sans KR',
+            fontFamily: 'Noto Sans CJK KR',
+            fontWeight: 'normal',
             outline: 'none',
           } : {
               height: '38px',
               border: '1px solid #ccc',
               borderRadius: '4px',
               padding: '2px 8px',
-              fontFamily: 'Noto Sans KR'
+              fontFamily: 'Noto Sans CJK KR',
+              fontWeight: 'normal',
             }}
           placeholder={this.props.placeholder}
           value={this.props.value}
