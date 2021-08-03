@@ -8,7 +8,6 @@ import reducer from './reducers';
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
-import { Scrollbars } from 'react-custom-scrollbars';
 
 const store = createStore(
   reducer,
@@ -17,15 +16,7 @@ const store = createStore(
 
 render(
   <Provider store={store}>
-    <Scrollbars
-      autoHeight
-      autoHeightMin={`100vh`}
-      autoHide
-      autoHideTimeout={1000}
-      autoHideDuration={200}
-      universal>
-      <App />
-    </Scrollbars>
+    <App />
   </Provider>,
   document.getElementById('root')
 );
