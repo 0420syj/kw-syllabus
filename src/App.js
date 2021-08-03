@@ -27,26 +27,26 @@ class App extends Component {
     });
 
     return (
-      <div className='App'>
-        <YearSelector value={year} onChange={this.props.changeYear} />
-        <SemesterSelector value={semester} onChange={this.props.changeSemester} />
-        <CollegeSelector value={college} onChange={this.props.setCollege} />
-        <MajorSelector value={major} onChange={this.props.setMajor} />
-        <Text placeholder='과목명' value={title} onChange={this.props.setTitle} />
-        <Text placeholder='담당교수' value={prof} onChange={this.props.setProf} />
-        <div className='list-container'>
-          {isFetching ?
-            <div>Loading ...</div> :
-            (<Fragment>
-              <div className='list-length'>
-                <span>{data.length}</span>건의 강좌 정보
-              </div>
-              {data.map((item) => {
-                return <ListItem key={item.id} data={item} />
-              })}
-            </Fragment>)}
+        <div className='App'>
+          <YearSelector value={year} onChange={this.props.changeYear} />
+          <SemesterSelector value={semester} onChange={this.props.changeSemester} />
+          <CollegeSelector value={college} onChange={this.props.setCollege} />
+          <MajorSelector value={major} onChange={this.props.setMajor} />
+          <Text placeholder='과목명' value={title} onChange={this.props.setTitle} />
+          <Text placeholder='담당교수' value={prof} onChange={this.props.setProf} />
+          <div className='list-container'>
+            {isFetching ?
+              <div>Loading ...</div> :
+              (<Fragment>
+                <div className='list-length'>
+                  <span>{data.length}</span>건의 강좌 정보
+                </div>
+                {data.map((item) => {
+                  return <ListItem key={item.id} data={item} />
+                })}
+              </Fragment>)}
+          </div>
         </div>
-      </div>
     );
   }
 }
