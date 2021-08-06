@@ -32,8 +32,8 @@ class App extends Component {
         <SemesterSelector value={semester} onChange={this.props.changeSemester} />
         <CollegeSelector value={college} onChange={this.props.setCollege} />
         <MajorSelector value={major} onChange={this.props.setMajor} />
-        <Text placeholder='과목명' value={title} onChange={this.props.setTitle} />
-        <Text placeholder='담당교수' value={prof} onChange={this.props.setProf} />
+        <Text placeholder='📔 과목명' value={title} onChange={this.props.setTitle} />
+        <Text placeholder='👨‍🏫 담당교수' value={prof} onChange={this.props.setProf} />
         <div className='list-container'>
           {isFetching ?
             <div>Loading ...</div> :

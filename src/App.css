@@ -21,6 +21,7 @@ div.form-selector > div {
   width: 100%;
   min-width: 300px;
   max-width: 500px;
+  text-align: left;
 }
 
 div.form-selector > input {
@@ -34,6 +35,7 @@ div.form-selector > input {
   display: flex;
   align-items: start;
   padding: 5px 0 5px;
+  font-weight: 500;
 }
 
 .list-container {
@@ -44,6 +46,7 @@ div.form-selector > input {
 
 .list-length {
   margin-top: 20px;
+  font-weight: 500;
 }
 
 .list-length > span {
