@@ -70,6 +70,7 @@ export const major = [
 ];
 
 const year = [];
+year.push({ value: '1996', label: ' ' }) // 😎
 for(let i = 2010; i <= new Date().getFullYear(); i++) {
   year.push({ value: i.toString(), label: i.toString() })
 };
