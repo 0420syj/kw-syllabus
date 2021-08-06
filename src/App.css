@@ -8,7 +8,26 @@
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
-div.form-selector {
+div.form-text {
+  display: flex;
+  justify-content: flex-start;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+div.form-text > div.input-icon {
+  width: 30px;
+  margin: auto;
+}
+
+div.form-text > input {
+  width: 100%;
+  font-size: 16px;
+  padding: 0 6px;
+  box-sizing: border-box;
+}
+
+div.form-selector, div.form-text {
   width: 100%;
   min-width: 300px;
   max-width: 500px;
@@ -22,13 +41,6 @@ div.form-selector > div {
   min-width: 300px;
   max-width: 500px;
   text-align: left;
-}
-
-div.form-selector > input {
-  width: 100%;
-  font-size: 16px;
-  padding: 0 6px;
-  box-sizing: border-box;
 }
 
 .form-label {
