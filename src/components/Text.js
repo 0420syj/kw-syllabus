@@ -13,26 +13,20 @@ class Text extends Component {
   }
 
   render() {
+    const inputStyle = {
+      height: '38px',
+      background: 'transparent',
+      border: 'none',
+      fontFamily: 'Noto Sans CJK KR',
+      fontWeight: 'normal',
+      outline: 'none',
+    };
+
     return (
-      <div className='form-text'>
+      <div className={(this.state.isFocused ? 'form-text active-div' : 'form-text')}>
         <div className='input-icon'>{this.props.icon}</div>
         <DebounceInput
-          style={(this.state.isFocused) ? {
-            height: '38px',
-            border: '1px solid maroon',
-            borderRadius: '4px',
-            boxShadow: '0 0 0 1px maroon',
-            padding: '0 8px',
-            fontFamily: 'Noto Sans CJK KR',
-            fontWeight: 'normal',
-            outline: 'none',
-          } : {
-              height: '38px',
-              border: '0',
-              padding: '2px 8px',
-              fontFamily: 'Noto Sans CJK KR',
-              fontWeight: 'normal',
-            }}
+          style={inputStyle}
           placeholder={this.props.placeholder}
           value={this.props.value}
           onChange={this.props.onChange}

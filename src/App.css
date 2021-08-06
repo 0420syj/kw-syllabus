@@ -15,6 +15,11 @@ div.form-text {
   border-radius: 4px;
 }
 
+div.active-div {
+  border: 1px solid maroon;
+  box-shadow: 0 0 0 1px maroon;
+}
+
 div.form-text > div.input-icon {
   width: 30px;
   margin: auto;
@@ -22,8 +27,8 @@ div.form-text > div.input-icon {
 
 div.form-text > input {
   width: 100%;
+  margin-right: 2px;
   font-size: 16px;
-  padding: 0 6px;
   box-sizing: border-box;
 }
 
