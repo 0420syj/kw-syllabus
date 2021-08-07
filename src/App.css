@@ -59,6 +59,7 @@ div.form-selector > div {
   width: 100%;
   min-width: 300px;
   max-width: 500px;
+  margin-bottom: 40px;
 }
 
 .list-length {
