@@ -3,7 +3,7 @@ import * as formData from '../data';
 export const fetchData = (year, semester) => (dispatch, getState) => {
   dispatch(startFetch());
   return (
-    fetch(`https://kwangwoon-syllabus.s3.ap-northeast-2.amazonaws.com/${year}-${semester}.json`)
+    fetch(`https://objectstorage.ap-seoul-1.oraclecloud.com/n/cnkvorx1cr2k/b/kw-syllabus/o/${year}-${semester}.json`)
       .then(r => r.json())
       .then(json => {
         dispatch(setData(year, semester, json));
