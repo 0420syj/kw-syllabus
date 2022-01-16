@@ -1,3 +1,8 @@
+export const initialState = {
+  year : 2022,
+  semester : 1,
+}
+
 export const college = [
   { value: '', label: '- 전체 -' },
   { value: '0000', label: '전체공통' },
@@ -70,7 +75,7 @@ export const major = [
 ];
 
 const year = [];
-for(let i = 2010; i <= 2021; i++) {
+for(let i = 2010; i <= 2022; i++) {
   year.push({ value: i.toString(), label: i.toString() })
 };
 export { year };
